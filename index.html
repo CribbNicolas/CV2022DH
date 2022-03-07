@@ -5,26 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
-    <title>Document</title>
+    <title>Portfolio Nicolas Cribb</title>
 </head>
 <body>
     <header>
-        <img src="img/logo batman.png" alt="">
-        <h1>CURRICULUM VITAE DE BRUCE WAYNE</h1>
+        <h2 style="font-size: 35px; font-weight: bold;">Nicolas Cribb Portfolio</h2>
+        <h1 style="display: none;" >Nicolas Cribb Portfolio Curricul Vitae</h1>
     </header>
     <main>
-        <section>
+        <section id="home" style="display:flex; flex-direction:column;">
+            <h2>Bienvenido!</h2>
+            <p style="font-size: 18px; text-align: center;">
+                Hola! Mi nombre Nicolas Cribb. Soy desarrollador web, enfocado principalmente en front-end. 
+            </p>
+            <p style="font-size: 18px; text-align: center;">
+                Me dispongo tanto a trabajo remoto como presencial, soy una persona paciente, respetuosa y abierta a las nuevas oportunidades.
+            </p>
+            <p style="font-size: 18px; text-align: center;">
+                Espero que tu estadía por aquí te resulte agradable!
+            </p>
+            <img src="img/nicolas-photo.jpg" class="mi-foto" alt="">
+        </section>
+        <section id="datos-personales">
             <h2>Datos Personales</h2>
             <ul>
-                <li><span>Nombre Completo:</span> Bruce Wayne</li>
-                <li><span>Fecha de nacimiento:</span> 01/05/1939</li>
-                <li><span>Lugar de nacimiento:</span> Gotham City</li>
+                <li><span>Nombre Completo:</span> Nicolas Cribb</li>
+                <li><span>Fecha de nacimiento:</span> 26/02/1994</li>
+                <li><span>Lugar de nacimiento:</span> Posadas, Misiones, Argentina.</li>
             </ul>
         </section>
-        <section>
+        <section id="formacion-academica">
             <h2>Formación Académica</h2>
             <ul class="date-list">
-                <li >
+                <li>
                     <span>1956-1961: </span>
                     <div>
                         <p>Universidad del espantapájaros</p>
@@ -40,7 +53,7 @@
                 </li>
             </ul>
         </section>
-        <section>
+        <section id="experiencia-laboral">
             <h2>Experiencia Laboral</h2>
             <ul class="date-list">
                 <li >
@@ -72,9 +85,22 @@
                     
                     
     <footer>
-        <span>0810 - BATMAN</span>
-        <img src="img/ico_instagram.png" alt="">
-        <img src="img/ico_linkedin.png" alt="">
+        <hr width="100%" color="white"/>
+        <nav>
+            <ul id="navigator" class="nav-list">
+                <li id="nav-home">Inicio</li>
+                <li id="nav-datos-personales">Datos Personales</li>
+                <li id="nav-formacion-academica">Formación académica</li>
+                <li id="nav-experiencia-laboral">Experiencia laboral</li>
+            </ul>
+        </nav>
+        <div style="display: flex; justify-content: center; gap: 30px;">
+            <a href="tel:3764204152" style="text-decoration: none;">3764 - 204152</a>
+            <img src="img/ico_instagram.png" alt="">
+            <img src="img/ico_linkedin.png" alt="">
+        </div>
     </footer>
 </body>
 </html>
+
+<script type="text/javascript" src="js/main.js"></script>

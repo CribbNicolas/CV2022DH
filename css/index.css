@@ -1,5 +1,19 @@
 body {
-    margin: 0px;
+    display: grid;
+    height: 100vh;
+    margin: 0;
+    background: rgb(27, 40, 68);
+    background: linear-gradient(180deg, rgb(27, 40, 68) 0%, rgb(27, 40, 68) 40%,  rgb(24, 13, 43) 100%);
+    grid-template-rows: 1fr 5fr 1fr;
+}
+
+body > * {
+    width: 100%;
+}
+
+body *{
+    /* Tipo de texto aqui */
+    color: azure;
 }
 
 header {
@@ -8,52 +22,28 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
-    background-color: #e6e6e6;
-}
-
-header img {
-    object-fit: contain;
-    height: 100px;
-}
-
-header h1 {
-    background: #C4C4C4;
-    text-align: center;
-    font-family: Times New Roman;
-    font-size: 29px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0em;
-    color: #005677;
-    letter-spacing: 8px;
-    height: 60px;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 main {
     overflow: hidden;
-    height: 900px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 footer{
-    background: #005677;
-    display: flex;
+    justify-self: end;
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr;
+    /* background: #005677; */
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    padding: 10px;
+    
+    padding-bottom: 20px;
     color: #e6e6e6;
     font-weight: bold;
 }
 
-h2 {
+main h2 {
     width: 100%;
     background-color: #C4C4C4;
     padding: 8px 15px;
@@ -74,7 +64,6 @@ li span{
 }
 
 .date-list li {
-    display: flex;
     list-style: none;
     gap: 10px;
     padding-bottom: 10px;
@@ -83,4 +72,54 @@ li span{
 .date-list li p{
     padding: 0%;
     margin: 0;
+}
+
+header h2 {
+    /* display: flex; */
+    font-weight: 800;
+    letter-spacing: 4px;
+    height: 60px;
+    text-align: center;
+}
+
+.nav-list{
+    list-style-type: none;
+}
+
+.nav-list li{
+    margin: 3px;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.nav-list li:hover{
+    background-color: #2e6c8518;
+}
+
+main > section {
+    width: 50%;
+    align-self: center;
+}
+
+.hide-section{
+    display: none !important;
+}
+
+.nav-item-selected{
+    background-color: #2b749136;
+}
+
+.mi-foto{
+    height: 250px;
+    object-fit: contain;
+    border-radius: 10px;
+    border: 5px solid rgba(41, 29, 112, 0.301);
+    align-self: center;
 }
